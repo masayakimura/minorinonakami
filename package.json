@@ -17,6 +17,15 @@
     "next": "13.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed#v2.0.0",
+    "react-twitter-embed": "^4.0.4",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.3",
+    "tailwindcss": "^3.2.7"
   }
 }
