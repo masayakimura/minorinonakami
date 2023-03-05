@@ -10,7 +10,9 @@ export const GumichansSecret = () => {
       <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
         ぐみちゃんのヒミツ
       </h2>
-      <p>ぐみちゃんのオフショットやいろんなことが知れちゃうよ</p>
+      <p className="mx-4">
+        ぐみちゃんのオフショットやいろんなことが知れちゃうよ
+      </p>
       <div className="p-4">
         <TwitterTimelineEmbed
           sourceType="profile"
