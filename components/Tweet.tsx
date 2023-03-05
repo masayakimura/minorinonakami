@@ -4,7 +4,6 @@ export const Tweet: React.FC<{ id: string }> = ({ id }) => {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // @ts-expect-error
     window.twttr?.widgets.load(ref.current)
   }, [id])
 
