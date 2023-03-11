@@ -30,6 +30,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
   let today = `${year}-${month}-${day}`
   console.log(`today:${today}`)
   console.log(`ライブ：${lives}`)
+  let dayOfWeek = date.getDay()
 
   return (
     <Layout title="ぐみちゃんおいしい">
