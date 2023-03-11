@@ -132,7 +132,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         <div>
           {lives.map((live) => (
             <div key={live.id}>
-              {!(today === live.date) ? (
+              {!(today === live.date) && today < live.date ? (
                 <>
                   <div className="py-4">
                     <div className="mb-1 text-center text-xl text-blue-600">
