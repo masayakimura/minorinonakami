@@ -38,11 +38,11 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
 
       <CardsCarousel />
 
-      <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
+      <h2 className="mt-6 block bg-blue-600 py-2 text-center text-2xl text-white">
         今日のぐみちゃん
       </h2>
 
-      <p className="my-3 text-center text-lg text-blue-600">
+      <p className="my-3 text-center text-2xl text-blue-600">
         今日はここで会えるよ！
       </p>
 
@@ -51,17 +51,17 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           {today === live.date ? (
             <>
               <div className="pb-4">
-                <div className="mb-1 text-center text-xl">
+                <div className="mb-1 text-center text-2xl">
                   <Link href={live.ticket_url}>{live.name}</Link>
                 </div>
-                <div className="mb-2 text-center text-xl">
+                <div className="mb-2 text-center text-2xl">
                   <Link href={live.place_url}>{live.place}</Link>
                 </div>
                 <div className="mb-3 flex items-center justify-center">
                   <div className="mr-2 rounded-md bg-blue-500 px-1 text-lg text-white">
                     ライブ
                   </div>
-                  <div className="text-xl">
+                  <div className="text-2xl">
                     {live.live_start_time
                       ? `${live.live_start_time.slice(
                           0,
@@ -74,7 +74,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   <div className="mr-2 rounded-md bg-pink-600 px-1 text-lg text-white">
                     特典会
                   </div>
-                  <div className="text-xl">
+                  <div className="text-2xl">
                     {live.event_start_time
                       ? `${live.event_start_time.slice(
                           0,
@@ -87,10 +87,13 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   <div className="mr-2 rounded-md bg-purple-800 px-3 text-lg text-white">
                     料金
                   </div>
-                  <div className="text-xl">
+                  <div className="text-2xl">
                     <Link href={live.ticket_url}>
-                      ADD：{live.price_add}K　DOOR：
-                      {live.price_door}K
+                      <span className="mr-4">ADD:{live.price_add}K</span>
+                      <span>
+                        DOOR:
+                        {live.price_door}K
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -104,11 +107,11 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       ))}
 
       <div>
-        <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
+        <h2 className="mt-6 block bg-blue-600 py-2 text-center text-2xl text-white">
           ぐみちゃんといっしょ
         </h2>
 
-        <p className="my-3 text-center text-lg text-blue-600">
+        <p className="my-3 text-center text-2xl text-blue-600">
           これからぐみちゃんに会える日
         </p>
         <div>
@@ -120,17 +123,17 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                     <div className="mx-auto mb-2 w-36 rounded-full bg-blue-500 py-1 text-center text-lg text-white">
                       <ConvertDate convertDate={live.date}></ConvertDate>
                     </div>
-                    <div className="mb-1 text-center text-xl">
+                    <div className="mb-1 text-center text-2xl">
                       <Link href={live.ticket_url}>{live.name}</Link>
                     </div>
-                    <div className="mb-2 text-center text-xl">
+                    <div className="mb-2 text-center text-2xl">
                       <Link href={live.place_url}>{live.place}</Link>
                     </div>
                     <div className="mb-3 flex items-center justify-center">
                       <div className="mr-2 rounded-md bg-blue-500 px-1 text-lg text-white">
                         ライブ
                       </div>
-                      <div className="text-xl">
+                      <div className="text-2xl">
                         {live.live_start_time
                           ? `${live.live_start_time.slice(
                               0,
@@ -143,7 +146,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                       <div className="mr-2 rounded-md bg-pink-600 px-1 text-lg text-white">
                         特典会
                       </div>
-                      <div className="text-xl">
+                      <div className="text-2xl">
                         {live.event_start_time
                           ? `${live.event_start_time.slice(
                               0,
@@ -156,10 +159,13 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                       <div className="mr-2 rounded-md bg-purple-800 px-3 text-lg text-white">
                         料金
                       </div>
-                      <div className="text-xl">
+                      <div className="text-2xl">
                         <Link href={live.ticket_url}>
-                          ADD：{live.price_add}K　DOOR：
-                          {live.price_door}K
+                          <span className="mr-4">ADD:{live.price_add}K</span>
+                          <span>
+                            DOOR:
+                            {live.price_door}K
+                          </span>
                         </Link>
                       </div>
                     </div>

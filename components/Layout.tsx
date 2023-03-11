@@ -13,7 +13,7 @@ export const Layout: FC<Title> = ({ title, children }) => {
       </Head>
       <div className="mx-auto max-w-2xl pb-8">
         <header>
-          <h1 className="block bg-blue-600 py-2 text-center text-xl text-white">
+          <h1 className="block bg-blue-600 py-2 text-center text-2xl text-white">
             ぐみちゃんおいしい
           </h1>
         </header>
