@@ -8,6 +8,7 @@ import { supabase } from '@/utils/supabase'
 import { Live } from '@/types/types'
 
 import ConvertDate from 'components/convertdate'
+import CardsCarousel from '@/components/carousel'
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: lives } = await supabase
@@ -38,15 +39,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！
       </p>
 
-      <Image
-        src="/topImage.jpg"
-        alt="ぐみちゃん"
-        width="360"
-        height="100"
-        className="mx-auto mb-4"
-      />
+      <CardsCarousel />
 
-      <h2 className="block bg-blue-600 py-2 text-center text-xl text-white">
+      <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
         今日のぐみちゃん
       </h2>
 
