@@ -95,8 +95,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                     料金
                   </div>
                   <div className="text-xl">
-                    ADD：{live.price_add}K　DOOR：
-                    {live.price_door}K
+                    <Link href={live.ticket_url}>
+                      ADD：{live.price_add}K　DOOR：
+                      {live.price_door}K
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -158,8 +160,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                         料金
                       </div>
                       <div className="text-xl">
-                        ADD：{live.price_add}K　DOOR：
-                        {live.price_door}K
+                        <Link href={live.ticket_url}>
+                          ADD：{live.price_add}K　DOOR：
+                          {live.price_door}K
+                        </Link>
                       </div>
                     </div>
                   </div>
