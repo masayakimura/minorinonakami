@@ -29,9 +29,6 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
   let month = ('0' + (date.getMonth() + 1)).slice(-2)
   let day = date.getDate()
   let today = `${year}-${month}-${day}`
-  console.log(`today:${today}`)
-  console.log(`ライブ：${lives}`)
-  let dayOfWeek = date.getDay()
 
   return (
     <Layout title="ぐみちゃんおいしい">
@@ -45,16 +42,15 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         今日のぐみちゃん
       </h2>
 
-      <p className="mt-4 text-center text-xl">今日のぐみちゃんの予定</p>
+      <p className="my-3 text-center text-lg text-blue-600">
+        今日はここで会えるよ！
+      </p>
 
       {lives.map((live) => (
         <div key={live.id}>
           {today === live.date ? (
             <>
-              <div className="py-4">
-                <div className="mb-1 text-center text-xl text-blue-600">
-                  <ConvertDate convertDate={live.date}></ConvertDate>
-                </div>
+              <div className="pb-4">
                 <div className="mb-1 text-center text-xl">
                   <Link href={live.ticket_url}>{live.name}</Link>
                 </div>
@@ -99,10 +95,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   </div>
                 </div>
               </div>
-              <hr />
+              <hr className="mb-4 mt-1" />
             </>
           ) : (
-            <p></p>
+            <></>
           )}
         </div>
       ))}
@@ -112,15 +108,16 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           ぐみちゃんといっしょ
         </h2>
 
-        <p className="mt-4 text-center text-xl">これからぐみちゃんに会える日</p>
-
+        <p className="my-3 text-center text-lg text-blue-600">
+          これからぐみちゃんに会える日
+        </p>
         <div>
           {lives.map((live) => (
             <div key={live.id}>
               {!(today === live.date) && today < live.date ? (
                 <>
-                  <div className="py-4">
-                    <div className="mb-1 text-center text-xl text-blue-600">
+                  <div className="pb-4">
+                    <div className="mx-auto mb-2 w-36 rounded-full bg-blue-500 py-1 text-center text-lg text-white">
                       <ConvertDate convertDate={live.date}></ConvertDate>
                     </div>
                     <div className="mb-1 text-center text-xl">
@@ -167,10 +164,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                       </div>
                     </div>
                   </div>
-                  <hr />
+                  <hr className="mb-5 mt-1" />
                 </>
               ) : (
-                <p></p>
+                <></>
               )}
             </div>
           ))}
