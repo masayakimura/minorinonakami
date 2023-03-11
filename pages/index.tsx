@@ -1,27 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 import { Layout } from '@/components/Layout'
-import { TodaysGumichan } from '@/components/TodaysGumichan'
-import { TogetherWithGumichan } from '@/components/TogetherWithGumichan'
 import { GumichansSecret } from '@/components/GumichansSecret'
 import { GetServerSideProps, NextPage } from 'next'
 import { supabase } from '@/utils/supabase'
 import { Live } from '@/types/types'
-import Link from 'next/link'
 
 import ConvertDate from 'components/convertdate'
-import ConvertTime from 'components/converttime'
-
-// export const getStaticProps: GetStaticProps = async () => {
-//   const { data: lives } = await supabase
-//     .from('lives')
-//     .select('*')
-//     .order('created_at', { ascending: true })
-
-//   return { props: { lives } }
-// }
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: lives } = await supabase
@@ -58,8 +44,6 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         height="100"
         className="mx-auto mb-4"
       />
-
-      {/* <TodaysGumichan /> */}
 
       <h2 className="block bg-blue-600 py-2 text-center text-xl text-white">
         今日のぐみちゃん
@@ -122,8 +106,6 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           )}
         </div>
       ))}
-
-      {/* <TogetherWithGumichan /> */}
 
       <div>
         <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
