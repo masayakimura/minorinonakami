@@ -8,10 +8,10 @@ export const GumichansSecret = () => {
   return (
     <div>
       <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
-        ぐみちゃんのヒミツ
+        ぐみちゃんの中心の生活
       </h2>
-      <p className="mx-4">
-        ぐみちゃんのオフショットやいろんなことが知れちゃうよ
+      <p className="mx-4 mt-4 text-xl">
+        SNSをフォローすれば、かわいいぐみちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、ぐみちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
       </p>
       <div className="p-4">
         <TwitterTimelineEmbed
@@ -23,7 +23,7 @@ export const GumichansSecret = () => {
           }}
         />
       </div>
-      <p className="mb-4 text-center">インスタやTikTokもあるよ！</p>
+      <p className="mb-4 text-center">↓インスタとTikTokはこちら↓</p>
       <div className="flex justify-center gap-12">
         <div>
           <Link href="https://www.instagram.com/pety_gumi_official/">

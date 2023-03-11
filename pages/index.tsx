@@ -34,7 +34,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
 
   return (
     <Layout title="ぐみちゃんおいしい">
-      <p className="mx-4">
+      <p className="mx-4 my-2 text-xl">
         Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！
       </p>
 
@@ -49,6 +49,8 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       <h2 className="block bg-blue-600 py-2 text-center text-xl text-white">
         今日のぐみちゃん
       </h2>
+
+      <p className="mt-4 text-center text-xl">今日のぐみちゃんの予定</p>
 
       {lives.map((live) => (
         <div key={live.id}>
@@ -114,6 +116,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
           ぐみちゃんといっしょ
         </h2>
+
+        <p className="mt-4 text-center text-xl">これからぐみちゃんに会える日</p>
+
         <div>
           {lives.map((live) => (
             <div key={live.id}>
