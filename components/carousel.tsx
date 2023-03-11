@@ -4,7 +4,7 @@ import { createStyles, Paper, useMantineTheme, rem } from '@mantine/core'
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: rem(500),
+    height: rem(540),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -63,7 +63,7 @@ export default function CardsCarousel() {
   ))
 
   return (
-    <div className="mx-auto w-11/12 sm:w-96">
+    <div className="mx-auto w-full sm:w-96">
       <Carousel
         slideSize="100%"
         breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: rem(2) }]}
