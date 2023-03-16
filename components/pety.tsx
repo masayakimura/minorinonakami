@@ -45,10 +45,10 @@ export const Pety: FC = () => {
 
   return (
     <div className="mb-4">
-      <h2 className="mt-8 block bg-blue-600 py-2 text-center text-2xl text-white">
+      <h2 className="mt-8 block bg-blue-600 py-2 text-center text-xl text-white">
         ぐみちゃんの居場所
       </h2>
-      <h3 className="mt-4 text-center text-2xl text-blue-500">about Pety</h3>
+      <h3 className="mt-4 text-center text-xl text-blue-500">about Pety</h3>
       <Image
         src="/logo.jpg"
         width="360"
@@ -104,7 +104,7 @@ export const Pety: FC = () => {
 
       <hr className="my-6" />
 
-      <h3 className="mt-4 text-center text-2xl text-blue-500">Member</h3>
+      <h3 className="mt-4 text-center text-xl text-blue-500">Member</h3>
 
       <ul>
         {MEMBERS.map((member) => (
@@ -125,7 +125,7 @@ export const Pety: FC = () => {
 
       <hr className="my-6" />
 
-      <h3 className="mt-4 text-center text-2xl text-blue-500">Music</h3>
+      <h3 className="mt-4 text-center text-xl text-blue-500">Music</h3>
 
       <p className="mx-4 my-2 text-xl">
         Petyの楽曲はサブスクで聴けちゃいます！かわいい曲から盛り上がる曲、バラードまで素敵な曲ばかり！ライブで聴くとさらに楽しいですよ！

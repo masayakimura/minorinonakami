@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { TwitterTimelineEmbed, TwitterTweetEmbed } from 'react-twitter-embed'
+import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 export const GumichansSecret = () => {
   return (
     <div>
-      <h2 className="mt-6 block bg-blue-600 py-2 text-center text-2xl text-white">
+      <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
         ぐみちゃんの中心の生活
       </h2>
       <p className="mx-4 mt-4 text-xl">
