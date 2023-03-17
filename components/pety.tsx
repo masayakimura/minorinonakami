@@ -152,18 +152,23 @@ export const Pety: FC = () => {
                 </Link>
                 <p className="text-center">Instagram</p>
               </div>
-              <div>
-                <Link href={member.tiktokUrl} target="_blank">
-                  <Image
-                    src="/tiktok.svg"
-                    alt="tiktok"
-                    width={50}
-                    height={50}
-                    className="mx-auto"
-                  />
-                </Link>
-                <p className="text-center">TikTok</p>
-              </div>
+
+              {member.tiktokUrl ? (
+                <div>
+                  <Link href={member.tiktokUrl} target="_blank">
+                    <Image
+                      src="/tiktok.svg"
+                      alt="tiktok"
+                      width={50}
+                      height={50}
+                      className="mx-auto"
+                    />
+                  </Link>
+                  <p className="text-center">TikTok</p>
+                </div>
+              ) : (
+                <></>
+              )}
             </div>
           </li>
         ))}
