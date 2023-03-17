@@ -167,8 +167,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   </svg>
                   {live.place_url ? (
                     <Link href={live.place_url}>{live.place}</Link>
-                  ) : (
+                  ) : live.place ? (
                     live.place
+                  ) : (
+                    <p>未定</p>
                   )}
                 </div>
                 <div className="mb-3 flex items-center justify-center">
@@ -264,8 +266,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
 
                       {live.ticket_url ? (
                         <Link href={live.ticket_url}>{live.name}</Link>
-                      ) : (
+                      ) : live.name ? (
                         live.name
+                      ) : (
+                        <p>未定</p>
                       )}
                     </div>
                     <div className="mb-3 flex items-center justify-center text-center text-xl">
@@ -290,8 +294,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                       </svg>
                       {live.place_url ? (
                         <Link href={live.place_url}>{live.place}</Link>
-                      ) : (
+                      ) : live.place ? (
                         live.place
+                      ) : (
+                        <p>未定</p>
                       )}
                     </div>
                     <div className="mb-3 flex items-center justify-center">
@@ -333,13 +339,17 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                               {live.price_door}K
                             </span>
                           </Link>
-                        ) : (
+                        ) : live.price_add ? (
                           <>
                             <span className="mr-4">ADD:{live.price_add}K</span>
                             <span>
                               DOOR:
                               {live.price_door}K
                             </span>
+                          </>
+                        ) : (
+                          <>
+                            <span>未定</span>
                           </>
                         )}
                       </div>
