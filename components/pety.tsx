@@ -6,37 +6,45 @@ export type Member = {
   name: string
   imgUrl: string
   twitterUrl: string
+  instagramUrl: string
+  tiktokUrl?: string
 }
 
-const MEMBERS: {
-  name: string
-  imgUrl: string
-  twitterUrl: string
-}[] = [
+const MEMBERS: Member[] = [
   {
     name: '汐音 ほのか',
     imgUrl: '/honoka.png',
     twitterUrl: 'https://twitter.com/pety_honoka',
+    instagramUrl: 'https://www.instagram.com/pety_honoka_official_/',
+    tiktokUrl: '',
   },
   {
     name: '羽乃 つゆ',
     imgUrl: '/tsuyu.png',
     twitterUrl: 'https://twitter.com/pety_tsuyu',
+    instagramUrl: 'https://www.instagram.com/pety_tsuyu_official/',
+    tiktokUrl: 'https://www.tiktok.com/@ebiumainaa',
   },
   {
     name: '観月 りり',
     imgUrl: '/riri.png',
     twitterUrl: 'https://twitter.com/pety_riri',
+    instagramUrl: 'https://www.instagram.com/pety_riri_official/',
+    tiktokUrl: 'https://www.tiktok.com/@pety_riri/',
   },
   {
     name: '琥珀 かりん',
     imgUrl: '/karin.png',
     twitterUrl: 'https://twitter.com/pety_karin',
+    instagramUrl: 'https://www.instagram.com/pety_karin_official/',
+    tiktokUrl: 'https://www.tiktok.com/@karichanniconico/',
   },
   {
     name: '小河 ぐみ',
     imgUrl: '/gumi.png',
     twitterUrl: 'https://twitter.com/pety_gumi',
+    instagramUrl: 'https://www.instagram.com/pety_gumi_official/',
+    tiktokUrl: 'https://www.tiktok.com/@pety_gumi/',
   },
 ]
 
@@ -112,13 +120,51 @@ export const Pety: FC = () => {
             <Link href={member.twitterUrl} target="_blank">
               <Image
                 src={member.imgUrl}
-                width="300"
-                height="300"
+                width="360"
+                height="400"
                 alt={member.name}
                 className="mx-auto"
               />
             </Link>
-            <p className="mt-2 text-center text-xl">{member.name}</p>
+            <p className="my-2 text-center text-xl">{member.name}</p>
+            <div className="mb-8 flex items-center justify-center gap-8">
+              <div>
+                <Link href={member.twitterUrl} target="_blank">
+                  <Image
+                    src="/twitter.png"
+                    alt="twitter"
+                    width={50}
+                    height={50}
+                    className="mx-auto"
+                  />
+                </Link>
+                <p className="text-center">Twitter</p>
+              </div>
+              <div>
+                <Link href={member.instagramUrl} target="_blank">
+                  <Image
+                    src="/instagram.png"
+                    alt="instagram"
+                    width={50}
+                    height={50}
+                    className="mx-auto"
+                  />
+                </Link>
+                <p className="text-center">Instagram</p>
+              </div>
+              <div>
+                <Link href={member.tiktokUrl} target="_blank">
+                  <Image
+                    src="/tiktok.svg"
+                    alt="tiktok"
+                    width={50}
+                    height={50}
+                    className="mx-auto"
+                  />
+                </Link>
+                <p className="text-center">TikTok</p>
+              </div>
+            </div>
           </li>
         ))}
       </ul>
