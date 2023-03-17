@@ -9,7 +9,7 @@ import { Live } from '@/types/types'
 
 import ConvertDate from 'components/convertdate'
 import CardsCarousel from '@/components/carousel'
-import { Pety } from '@/components/pety'
+import { Member, Pety } from '@/components/pety'
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: lives } = await supabase
@@ -18,6 +18,14 @@ export const getServerSideProps: GetServerSideProps = async () => {
     .order('date', { ascending: true })
 
   return { props: { lives } }
+}
+
+const gumi: Member = {
+  name: '小河 ぐみ',
+  imgUrl: '/gumi.png',
+  twitterUrl: 'https://twitter.com/pety_gumi',
+  instagramUrl: 'https://www.instagram.com/pety_gumi_official/',
+  tiktokUrl: 'https://www.tiktok.com/@pety_gumi/',
 }
 
 type LivesProps = {
@@ -31,21 +39,84 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
   let day = date.getDate()
   let today = `${year}-${month}-${day}`
 
+  const todayCheck = lives.map((live) => {
+    if (today === live.date) {
+      return true
+    } else {
+      return false
+    }
+  })
+
+  const selectDate = todayCheck.filter(function (n) {
+    return n === true
+  })
+
   return (
     <Layout title="ぐみちゃんおいしい">
       <p className="mx-4 my-2 text-xl">
         Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！
       </p>
-
       <CardsCarousel />
-
       <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
         今日のぐみちゃん
       </h2>
 
-      <p className="my-3 text-center text-xl text-blue-600">
-        今日はここで会えるよ！
-      </p>
+      {selectDate.length === 0 ? (
+        <>
+          <p className="my-3 mx-2 text-center text-xl text-blue-600">
+            今日は会えないけど我慢してね！
+            <br />
+            SNSでかわいいぐみちゃんをいっぱい補給して〜
+          </p>
+          <div className="mb-8 flex items-center justify-center gap-8">
+            <div>
+              <Link href={gumi.twitterUrl} target="_blank">
+                <Image
+                  src="/twitter.png"
+                  alt="twitter"
+                  width={50}
+                  height={50}
+                  className="mx-auto"
+                />
+              </Link>
+              <p className="text-center">Twitter</p>
+            </div>
+            <div>
+              <Link href={gumi.instagramUrl} target="_blank">
+                <Image
+                  src="/instagram.png"
+                  alt="instagram"
+                  width={50}
+                  height={50}
+                  className="mx-auto"
+                />
+              </Link>
+              <p className="text-center">Instagram</p>
+            </div>
+
+            {gumi.tiktokUrl ? (
+              <div>
+                <Link href={gumi.tiktokUrl} target="_blank">
+                  <Image
+                    src="/tiktok.svg"
+                    alt="tiktok"
+                    width={50}
+                    height={50}
+                    className="mx-auto"
+                  />
+                </Link>
+                <p className="text-center">TikTok</p>
+              </div>
+            ) : (
+              <></>
+            )}
+          </div>
+        </>
+      ) : (
+        <p className="my-3 text-center text-xl text-blue-600">
+          今日はここで会えるよ！
+        </p>
+      )}
 
       {lives.map((live) => (
         <div key={live.id}>
@@ -158,7 +229,6 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           )}
         </div>
       ))}
-
       <div>
         <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
           ぐみちゃんといっしょ
@@ -284,7 +354,6 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           ))}
         </div>
       </div>
-
       <GumichansSecret />
       <Pety />
     </Layout>
