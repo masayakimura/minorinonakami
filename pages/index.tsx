@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Layout } from '@/components/Layout'
-import { GumichansSecret } from '@/components/GumichansSecret'
+import { LifeCenteredOnGumichan } from '@/components/LifeCenteredOnGumichan'
 import { GetServerSideProps, NextPage } from 'next'
 import { supabase } from '@/utils/supabase'
 import { Live } from '@/types/types'
@@ -130,7 +130,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="h-6 w-6"
+                    className="mr-1 h-6 w-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -140,7 +140,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   </svg>
 
                   {live.ticket_url ? (
-                    <Link href={live.ticket_url}>{live.name}</Link>
+                    <Link href={live.ticket_url} target="_blank">
+                      {live.name}
+                    </Link>
                   ) : (
                     live.name
                   )}
@@ -152,7 +154,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="h-6 w-6"
+                    className="mr-1 h-6 w-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -166,7 +168,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                     />
                   </svg>
                   {live.place_url ? (
-                    <Link href={live.place_url}>{live.place}</Link>
+                    <Link href={live.place_url} target="_blank">
+                      {live.place}
+                    </Link>
                   ) : live.place ? (
                     live.place
                   ) : (
@@ -205,7 +209,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   </div>
                   <div className="text-xl">
                     {live.ticket_url ? (
-                      <Link href={live.ticket_url}>
+                      <Link href={live.ticket_url} target="_blank">
                         <span className="mr-4">ADD:{live.price_add}K</span>
                         <span>
                           DOOR:
@@ -255,7 +259,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="h-6 w-6"
+                        className="mr-1 h-6 w-6"
                       >
                         <path
                           strokeLinecap="round"
@@ -265,7 +269,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                       </svg>
 
                       {live.ticket_url ? (
-                        <Link href={live.ticket_url}>{live.name}</Link>
+                        <Link href={live.ticket_url} target="_blank">
+                          {live.name}
+                        </Link>
                       ) : live.name ? (
                         live.name
                       ) : (
@@ -279,7 +285,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="h-6 w-6"
+                        className="mr-1 h-6 w-6"
                       >
                         <path
                           strokeLinecap="round"
@@ -293,7 +299,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                         />
                       </svg>
                       {live.place_url ? (
-                        <Link href={live.place_url}>{live.place}</Link>
+                        <Link href={live.place_url} target="_blank">
+                          {live.place}
+                        </Link>
                       ) : live.place ? (
                         live.place
                       ) : (
@@ -332,7 +340,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                       </div>
                       <div className="text-xl">
                         {live.ticket_url ? (
-                          <Link href={live.ticket_url}>
+                          <Link href={live.ticket_url} target="_blank">
                             <span className="mr-4">ADD:{live.price_add}K</span>
                             <span>
                               DOOR:
@@ -364,7 +372,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           ))}
         </div>
       </div>
-      <GumichansSecret />
+      <LifeCenteredOnGumichan />
       <Pety />
     </Layout>
   )
