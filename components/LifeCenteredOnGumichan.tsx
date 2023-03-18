@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
-export const GumichansSecret = () => {
+export const LifeCenteredOnGumichan = () => {
   return (
     <div>
       <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
