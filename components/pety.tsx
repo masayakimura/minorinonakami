@@ -190,6 +190,20 @@ export const Pety: FC = () => {
           className="mx-auto"
         />
       </Link>
+      <Link href="https://linkco.re/uvERUgzU" target="_blank">
+        <p className="mx-4 my-2 text-center text-xl">キュンLOVE</p>
+      </Link>
+      <Link href="https://soundcloud.com/petypety0912" target="_blank">
+        <div className="mt-6 flex items-center justify-center gap-4">
+          <Image
+            src="/soundcloud_logo.png"
+            width="60"
+            height="60"
+            alt="sound croud"
+          />
+          <p className="text-xl">SOUND CLOUD</p>
+        </div>
+      </Link>
     </div>
   )
 }
