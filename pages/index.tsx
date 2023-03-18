@@ -10,6 +10,7 @@ import { Live } from '@/types/types'
 import ConvertDate from 'components/convertdate'
 import CardsCarousel from '@/components/carousel'
 import { Member, Pety } from '@/components/pety'
+import { Footer } from '@/components/Footer'
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: lives } = await supabase
@@ -374,6 +375,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       </div>
       <LifeCenteredOnGumichan />
       <Pety />
+      <Footer />
     </Layout>
   )
 }

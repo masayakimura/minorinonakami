@@ -11,7 +11,7 @@ export const Layout: FC<Title> = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="mx-auto max-w-2xl pb-8">
+      <div className="mx-auto max-w-2xl">
         <header>
           <h1 className="block bg-blue-600 py-2 text-center text-2xl text-white">
             ぐみちゃんおいしい
