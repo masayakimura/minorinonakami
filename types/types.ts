@@ -12,4 +12,5 @@ export type Live = {
   event_finish_time?: string | null
   price_add?: string | null
   price_door?: string | null
+  tweet_url?: string | null
 }

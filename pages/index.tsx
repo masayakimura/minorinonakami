@@ -139,8 +139,8 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                     />
                   </svg>
 
-                  {live.ticket_url ? (
-                    <Link href={live.ticket_url} target="_blank">
+                  {live.tweet_url ? (
+                    <Link href={live.tweet_url} target="_blank">
                       {live.name}
                     </Link>
                   ) : (
@@ -268,8 +268,8 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                         />
                       </svg>
 
-                      {live.ticket_url ? (
-                        <Link href={live.ticket_url} target="_blank">
+                      {live.tweet_url ? (
+                        <Link href={live.tweet_url} target="_blank">
                           {live.name}
                         </Link>
                       ) : live.name ? (
