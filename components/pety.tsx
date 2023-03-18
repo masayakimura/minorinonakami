@@ -117,15 +117,13 @@ export const Pety: FC = () => {
       <ul>
         {MEMBERS.map((member) => (
           <li key={member.name} className="mt-4">
-            <Link href={member.twitterUrl} target="_blank">
-              <Image
-                src={member.imgUrl}
-                width="360"
-                height="400"
-                alt={member.name}
-                className="mx-auto"
-              />
-            </Link>
+            <Image
+              src={member.imgUrl}
+              width="360"
+              height="400"
+              alt={member.name}
+              className="mx-auto"
+            />
             <p className="my-2 text-center text-xl">{member.name}</p>
             <div className="mb-8 flex items-center justify-center gap-8">
               <div>
