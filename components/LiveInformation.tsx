@@ -24,7 +24,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
 
   return (
     <>
-      <div className="pb-4" key={id}>
+      <div className="mx-4 pb-4" key={id}>
         {today === date ? (
           ''
         ) : (
