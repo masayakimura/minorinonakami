@@ -127,13 +127,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
                 </span>
               </Link>
             ) : (
-              <>
-                <span className="mr-4">ADD:{price_add}K</span>
-                <span>
-                  DOOR:
-                  {price_door}K
-                </span>
-              </>
+              '未定'
             )}
           </div>
         </div>
