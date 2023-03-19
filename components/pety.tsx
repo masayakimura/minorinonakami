@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { FC } from 'react'
+import { Heading } from './Heading'
 
 export type Member = {
   name: string
@@ -49,13 +50,10 @@ const MEMBERS: Member[] = [
 ]
 
 export const Pety: FC = () => {
-  console.log(MEMBERS)
-
   return (
     <div className="mb-4">
-      <h2 className="mt-8 block bg-blue-600 py-2 text-center text-xl text-white">
-        ぐみちゃんの居場所
-      </h2>
+      <Heading text="ぐみちゃんの居場所" />
+
       <h3 className="mt-4 text-center text-xl text-blue-500">about Pety</h3>
       <Image
         src="/logo.jpg"

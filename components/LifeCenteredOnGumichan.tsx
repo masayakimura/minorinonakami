@@ -2,13 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
+import { Heading } from './Heading'
 
 export const LifeCenteredOnGumichan = () => {
   return (
     <div>
-      <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
-        ぐみちゃん中心の生活
-      </h2>
+      <Heading text="ぐみちゃん中心の生活" />
+
       <p className="mx-4 mt-4 text-xl">
         SNSをフォローすれば、かわいいぐみちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、ぐみちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
       </p>
