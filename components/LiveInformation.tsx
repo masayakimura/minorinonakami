@@ -5,7 +5,8 @@ import { FC } from 'react'
 import ConvertDate from 'components/convertdate'
 import { getToday } from '@/pages'
 
-export const LiveInformation: FC<Omit<Live, 'id' | 'created_at'>> = ({
+export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
+  id,
   name,
   ticket_url,
   place,
@@ -23,7 +24,7 @@ export const LiveInformation: FC<Omit<Live, 'id' | 'created_at'>> = ({
 
   return (
     <>
-      <div className="pb-4">
+      <div className="pb-4" key={id}>
         {today === date ? (
           ''
         ) : (

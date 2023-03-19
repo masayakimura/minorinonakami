@@ -124,9 +124,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       )}
 
       {lives.map((live) => (
-        <div key={live.id}>
+        <>
           {today === live.date ? (
             <LiveInformation
+              id={live.id}
               name={live.name}
               ticket_url={live.ticket_url}
               place={live.place}
@@ -143,7 +144,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           ) : (
             <></>
           )}
-        </div>
+        </>
       ))}
       <div>
         <h2 className="mt-6 block bg-blue-600 py-2 text-center text-xl text-white">
@@ -155,9 +156,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         </p>
         <div>
           {lives.map((live) => (
-            <div key={live.id}>
+            <>
               {!(today === live.date) && today < live.date ? (
                 <LiveInformation
+                  id={live.id}
                   name={live.name}
                   ticket_url={live.ticket_url}
                   place={live.place}
@@ -172,9 +174,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                   tweet_url={live.tweet_url}
                 />
               ) : (
-                <></>
+                ''
               )}
-            </div>
+            </>
           ))}
         </div>
       </div>
