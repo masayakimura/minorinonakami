@@ -125,7 +125,7 @@ export const Pety: FC = () => {
               className="mx-auto"
             />
             <p className="my-2 text-center text-xl">{member.name}</p>
-            <div className="mb-8 flex items-center justify-center gap-8">
+            <div className="mb-8 flex items-baseline justify-center gap-8">
               <div>
                 <Link href={member.twitterUrl} target="_blank">
                   <Image
@@ -133,7 +133,7 @@ export const Pety: FC = () => {
                     alt="twitter"
                     width={50}
                     height={50}
-                    className="mx-auto"
+                    className="mx-auto mb-1"
                   />
                 </Link>
                 <p className="text-center">Twitter</p>
