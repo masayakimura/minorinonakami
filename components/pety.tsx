@@ -68,7 +68,7 @@ export const Pety: FC = () => {
         2021年9月デビュー。「生きるのムズい」世界を変える！ささいな毎日にささいなハッピーとラブを！をコンセプトに活動中！
       </p>
 
-      <div className="flex items-center justify-center gap-8">
+      <div className="flex items-baseline justify-center gap-8">
         <div>
           <Link href="https://twitter.com/pety_official/" target="_blank">
             <Image
@@ -76,7 +76,7 @@ export const Pety: FC = () => {
               alt="twitter"
               width={50}
               height={50}
-              className="mx-auto"
+              className="mx-auto mb-1"
             />
           </Link>
           <p className="text-center">Twitter</p>
@@ -91,7 +91,7 @@ export const Pety: FC = () => {
               alt="youtube"
               width={160}
               height={50}
-              className="mx-auto"
+              className="mx-auto mb-1"
             />
           </Link>
           <p className="text-center">Youtube</p>
