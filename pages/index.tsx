@@ -28,13 +28,15 @@ export const getToday = () => {
   let date = new Date()
   let year = date.getFullYear()
   let month = ('0' + (date.getMonth() + 1)).slice(-2)
-  let day = date.getDate()
+  let day = ('0' + date.getDate()).slice(-2)
   let today = `${year}-${month}-${day}`
   return today
 }
 
 const Home: NextPage<LivesProps> = ({ lives }) => {
   let today = getToday()
+  console.log(today)
+
   const todayCheck = lives.map((live) => {
     if (today === live.date) {
       return true
@@ -55,6 +57,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       <CardsCarousel />
 
       <Heading text="今日のぐみちゃん" />
+
       {selectDate.length === 0 ? (
         <NotMeetGumi />
       ) : (
