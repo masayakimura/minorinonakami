@@ -89,7 +89,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         </>
       ))}
 
-      <Heading text="ぐみちゃんといっしょ" />
+      <Heading text="ぐみちゃん中心の生活" />
       <p className="my-3 text-center text-xl text-blue-600">
         これからぐみちゃんに会える日
       </p>

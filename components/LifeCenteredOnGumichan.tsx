@@ -7,7 +7,7 @@ import { Heading } from './Heading'
 export const LifeCenteredOnGumichan = () => {
   return (
     <div>
-      <Heading text="ぐみちゃん中心の生活" />
+      <Heading text="ぐみちゃんおいしい" />
 
       <p className="mx-4 mt-4 text-xl">
         SNSをフォローすれば、かわいいぐみちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、ぐみちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
