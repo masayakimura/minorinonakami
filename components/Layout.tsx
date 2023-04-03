@@ -8,14 +8,13 @@ export const Layout: FC<Title> = ({ children }) => {
   return (
     <>
       <Header
-        pageTitle={'ぐみのなかみ'}
-        pageDescription={
+        title={'ぐみのなかみ'}
+        description={
           'Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！'
         }
-        pagePath={'https://guminonakami.com'}
-        pageImg={'https://guminonakami.com'}
-        pageImgWidth={1280}
-        pageImgHeight={960}
+        url={'https://guminonakami.com'}
+        type={'website'}
+        imageUrl={'https://www.guminonakami.com/topImage07.jpg'}
       />
       <div className="mx-auto max-w-2xl">
         <header>
