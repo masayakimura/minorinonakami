@@ -50,7 +50,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
   })
 
   return (
-    <Layout title="ぐみのなかみ">
+    <Layout>
       <p className="mx-4 my-2 text-xl">
         Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！
       </p>
