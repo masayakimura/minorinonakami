@@ -1,15 +1,15 @@
-import { Layout } from '@/components/Layout'
-import { LifeCenteredOnGumichan } from '@/components/LifeCenteredOnGumichan'
 import { GetServerSideProps, NextPage } from 'next'
 import { supabase } from '@/utils/supabase'
 import { Live } from '@/types/types'
-
+import { Layout } from '@/components/Layout'
+import { LifeCenteredOnGumichan } from '@/components/LifeCenteredOnGumichan'
 import CardsCarousel from '@/components/carousel'
 import { Pety } from '@/components/pety'
 import { Footer } from '@/components/Footer'
 import { LiveInformation } from '@/components/LiveInformation'
 import { NotMeetGumi } from '@/components/NotMeetGumi'
 import { Heading } from '@/components/Heading'
+import { ShareIcons } from '@/components/ShareIcons'
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: lives } = await supabase
@@ -120,6 +120,8 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       </div>
       <LifeCenteredOnGumichan />
       <Pety />
+      <hr className="mb-4 mt-1" />
+      <ShareIcons />
       <Footer />
     </Layout>
   )
