@@ -2,7 +2,7 @@ import { GetServerSideProps, NextPage } from 'next'
 import { supabase } from '@/utils/supabase'
 import { Live } from '@/types/types'
 import { Layout } from '@/components/Layout'
-import { LifeCenteredOnGumichan } from '@/components/LifeCenteredOnGumichan'
+import { GumichanOishii } from '@/components/GumichanOishii'
 import CardsCarousel from '@/components/carousel'
 import { Pety } from '@/components/pety'
 import { Footer } from '@/components/Footer'
@@ -118,7 +118,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           </>
         ))}
       </div>
-      <LifeCenteredOnGumichan />
+      <GumichanOishii />
       <Pety />
       <hr className="mb-4 mt-1" />
       <ShareIcons />

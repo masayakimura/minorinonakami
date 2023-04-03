@@ -4,7 +4,7 @@ import React from 'react'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import { Heading } from './Heading'
 
-export const LifeCenteredOnGumichan = () => {
+export const GumichanOishii = () => {
   return (
     <div>
       <Heading text="ぐみちゃんおいしい" />
