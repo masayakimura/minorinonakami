@@ -9,7 +9,7 @@ export const GumichanOishii = () => {
     <div>
       <Heading text="ぐみちゃんおいしい" />
 
-      <p className="mx-4 mt-4 text-xl">
+      <p className="mx-4 mt-3 text-xl">
         SNSをフォローすれば、かわいいぐみちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、ぐみちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
       </p>
       <div className="p-4">
