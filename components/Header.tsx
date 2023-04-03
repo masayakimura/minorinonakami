@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import GoogleAnalytics from './GoogleAnalytics'
 
 type Props = {
   title: string
@@ -21,6 +22,8 @@ export const Header = (props: Props) => {
       <meta property="og:site_name" content={title} />
       <meta property="og:type" content={type} />
       <meta property="og:image" content={imageUrl} />
+
+      <GoogleAnalytics />
     </Head>
   )
 }
