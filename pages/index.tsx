@@ -35,7 +35,6 @@ export const getToday = () => {
 
 const Home: NextPage<LivesProps> = ({ lives }) => {
   let today = getToday()
-  console.log(today)
 
   const todayCheck = lives.map((live) => {
     if (today === live.date) {
@@ -122,6 +121,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       <Pety />
       <hr className="mb-4 mt-1" />
       <ShareIcons />
+      <p className="my-6 mx-4">
+        このサイトは、Pety運営に許可を得て、Petyとぐみちゃんを応援しているファンが運営している非公式サイトです。正確なライブ情報などは公式Twitterをご確認ください。
+      </p>
       <Footer />
     </Layout>
   )
