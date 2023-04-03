@@ -1,7 +1,7 @@
 import Script from 'next/script'
 import { existsGaId, GA_ID } from '../src/lib/gtag'
 
-const GoogleAnalytics = () => (
+export const GoogleAnalytics = () => (
   <>
     {existsGaId && (
       <>
@@ -22,5 +22,3 @@ const GoogleAnalytics = () => (
     )}
   </>
 )
-
-export default GoogleAnalytics
