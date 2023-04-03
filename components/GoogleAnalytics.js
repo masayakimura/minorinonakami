@@ -1,9 +1,9 @@
 import Script from 'next/script'
 import { existsGaId, GA_ID } from '../src/lib/gtag'
 
-export const GoogleAnalytics = () => (
-  <>
-    {existsGaId && (
+export default function GoogleAnalytics() {
+  {
+    existsGaId && (
       <>
         <Script
           defer
@@ -19,6 +19,6 @@ export const GoogleAnalytics = () => (
           `}
         </Script>
       </>
-    )}
-  </>
-)
+    )
+  }
+}
