@@ -14,7 +14,7 @@ export const Layout: FC<Title> = ({ children }) => {
         }
         url={'https://guminonakami.com'}
         type={'website'}
-        imageUrl={'https://www.guminonakami.com/topImage07.jpg'}
+        imageUrl={'https://www.guminonakami.com/topImage01.jpg'}
       />
       <div className="mx-auto max-w-2xl">
         <header>
