@@ -51,7 +51,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
 
   return (
     <Layout>
-      <p className="mx-4 my-2 text-xl">
+      <p className="mx-4 my-2 font-yusei text-xl">
         Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！
       </p>
       <CardsCarousel />
@@ -61,7 +61,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       {selectDate.length === 0 ? (
         <NotMeetGumi />
       ) : (
-        <p className="my-3 text-center text-xl text-blue-600">
+        <p className="my-3 text-center font-yusei text-xl text-blue-600">
           今日はここで会えるよ！
         </p>
       )}
@@ -90,7 +90,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       ))}
 
       <Heading text="ぐみちゃん中心の生活" />
-      <p className="my-3 text-center text-xl text-blue-600">
+      <p className="my-3 text-center font-yusei text-xl text-blue-600">
         これからぐみちゃんに会える日
       </p>
       <div>

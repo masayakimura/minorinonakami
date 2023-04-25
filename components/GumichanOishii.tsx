@@ -6,7 +6,7 @@ import { Heading } from './Heading'
 
 export const GumichanOishii = () => {
   return (
-    <div>
+    <div className="font-yusei">
       <Heading text="ぐみちゃんおいしい" />
 
       <p className="mx-4 mt-3 text-xl">

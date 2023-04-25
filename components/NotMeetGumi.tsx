@@ -14,7 +14,7 @@ const gumi: Member = {
 export const NotMeetGumi = () => {
   return (
     <>
-      <p className="my-3 mx-2 text-center text-xl text-blue-600">
+      <p className="my-3 mx-2 text-center font-yusei text-xl text-blue-600">
         今日は会えないけど我慢してね！
         <br />
         SNSでかわいいぐみちゃんをいっぱい補給して〜

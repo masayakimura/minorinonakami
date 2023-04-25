@@ -51,7 +51,7 @@ const MEMBERS: Member[] = [
 
 export const Pety: FC = () => {
   return (
-    <div className="mb-4">
+    <div className="mb-4 font-yusei">
       <Heading text="ぐみちゃんの居場所" />
 
       <h3 className="mt-4 text-center text-xl text-blue-500">about Pety</h3>
