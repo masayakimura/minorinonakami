@@ -16,6 +16,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     .from('lives')
     .select('*')
     .order('date', { ascending: true })
+    .order('live_start_time', { ascending: true })
 
   return { props: { lives } }
 }
