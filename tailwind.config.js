@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        yusei: ['Yusei Magic', 'sans-serif'],
+        yusei: ['Zen Maru Gothic', 'sans-serif'],
       },
     },
   },
