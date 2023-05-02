@@ -79,7 +79,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
               live_finish_time={live.live_finish_time}
               event_start_time={live.event_start_time}
               event_finish_time={live.event_finish_time}
-              price_add={live.price_add}
+              price_adv={live.price_adv}
               price_door={live.price_door}
               tweet_url={live.tweet_url}
             />
@@ -108,7 +108,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                 live_finish_time={live.live_finish_time}
                 event_start_time={live.event_start_time}
                 event_finish_time={live.event_finish_time}
-                price_add={live.price_add}
+                price_adv={live.price_adv}
                 price_door={live.price_door}
                 tweet_url={live.tweet_url}
               />

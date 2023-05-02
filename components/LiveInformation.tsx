@@ -16,7 +16,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
   live_finish_time,
   event_start_time,
   event_finish_time,
-  price_add,
+  price_adv,
   price_door,
   tweet_url,
 }) => {
@@ -120,7 +120,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
           <div className="text-xl">
             {ticket_url ? (
               <Link href={ticket_url} target="_blank">
-                <span className="mr-4">ADD:{price_add}K</span>
+                <span className="mr-4">ADV:{price_adv}K</span>
                 <span>
                   DOOR:
                   {price_door}K
