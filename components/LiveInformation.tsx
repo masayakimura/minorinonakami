@@ -19,6 +19,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
   price_adv,
   price_door,
   tweet_url,
+  privilege,
 }) => {
   let today = getToday()
 
@@ -120,9 +121,9 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
           <div className="text-xl">
             {ticket_url ? (
               <Link href={ticket_url} target="_blank">
-                <span className="mr-4">ADV:{price_adv}K</span>
+                <span className="mr-4">Adv:{price_adv}K</span>
                 <span>
-                  DOOR:
+                  Door:
                   {price_door}K
                 </span>
               </Link>
@@ -131,6 +132,16 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
             )}
           </div>
         </div>
+        {privilege ? (
+          <div className="mt-3 flex items-center justify-center">
+            <div className="mr-2 rounded-md bg-green-600 px-3 text-lg text-white">
+              特典
+            </div>
+            <div className="text-xl">{privilege}</div>
+          </div>
+        ) : (
+          ''
+        )}
       </div>
       <hr className="mb-4 mt-1" />
     </>

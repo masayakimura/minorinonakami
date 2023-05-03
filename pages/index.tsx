@@ -82,6 +82,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
               price_adv={live.price_adv}
               price_door={live.price_door}
               tweet_url={live.tweet_url}
+              privilege={live.privilege}
             />
           ) : (
             <></>
@@ -111,6 +112,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
                 price_adv={live.price_adv}
                 price_door={live.price_door}
                 tweet_url={live.tweet_url}
+                privilege={live.privilege}
               />
             ) : (
               ''

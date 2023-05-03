@@ -13,4 +13,5 @@ export type Live = {
   price_adv?: string | null
   price_door?: string | null
   tweet_url?: string | null
+  privilege?: string | null
 }
