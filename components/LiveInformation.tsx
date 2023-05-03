@@ -92,7 +92,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
           <div className="mr-2 rounded-md bg-blue-500 px-1 text-lg text-white">
             ライブ
           </div>
-          <div className="text-xl">
+          <div className="pb-1 text-xl">
             {live_start_time
               ? `${live_start_time.slice(0, 5)}〜${live_finish_time?.slice(
                   0,
@@ -105,7 +105,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
           <div className="mr-2 rounded-md bg-pink-600 px-1 text-lg text-white">
             特典会
           </div>
-          <div className="text-xl">
+          <div className="pb-1 text-xl">
             {event_start_time
               ? `${event_start_time.slice(0, 5)}〜${event_finish_time?.slice(
                   0,
@@ -121,10 +121,10 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
           <div className="text-xl">
             {ticket_url ? (
               <Link href={ticket_url} target="_blank">
-                <span className="mr-4">Adv:{price_adv}K</span>
+                <span className="mr-4">Adv:{price_adv}k</span>
                 <span>
                   Door:
-                  {price_door}K
+                  {price_door}k
                 </span>
               </Link>
             ) : (
