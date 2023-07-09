@@ -51,15 +51,6 @@ const data = [
   {
     image: '/topImage06.jpg',
   },
-  {
-    image: '/topImage07.jpg',
-  },
-  {
-    image: '/topImage08.jpg',
-  },
-  {
-    image: '/topImage09.jpg',
-  },
 ]
 
 export default function CardsCarousel() {
