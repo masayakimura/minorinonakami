@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Member } from './pety'
+type GumiType = {
+  name: string
+  imgUrl: string
+  twitterUrl: string
+  instagramUrl: string
+  tiktokUrl: string
+}
 
-const gumi: Member = {
+const gumi: GumiType = {
   name: '小河 ぐみ',
   imgUrl: '/gumi.png',
   twitterUrl: 'https://twitter.com/pety_gumi',
@@ -32,6 +38,7 @@ export const NotMeetGumi = () => {
           </Link>
           <p className="text-center">Twitter</p>
         </div>
+
         <div>
           <Link href={gumi.instagramUrl} target="_blank">
             <Image
@@ -45,22 +52,18 @@ export const NotMeetGumi = () => {
           <p className="text-center">Instagram</p>
         </div>
 
-        {gumi.tiktokUrl ? (
-          <div>
-            <Link href={gumi.tiktokUrl} target="_blank">
-              <Image
-                src="/tiktok.svg"
-                alt="tiktok"
-                width={50}
-                height={50}
-                className="mx-auto"
-              />
-            </Link>
-            <p className="text-center">TikTok</p>
-          </div>
-        ) : (
-          <></>
-        )}
+        <div>
+          <Link href={gumi.tiktokUrl} target="_blank">
+            <Image
+              src="/tiktok.svg"
+              alt="tiktok"
+              width={50}
+              height={50}
+              className="mx-auto"
+            />
+          </Link>
+          <p className="text-center">TikTok</p>
+        </div>
       </div>
     </>
   )
