@@ -23,7 +23,7 @@ export const GumichanOishii = () => {
         />
       </div> */}
       {/* <p className="mb-4 text-center">↓インスタとTikTokはこちら↓</p> */}
-      <div className="mt-5 flex justify-center gap-12">
+      <div className="mt-5 flex items-baseline justify-center gap-12">
         <div>
           <Link href="https://twitter.com/pety_gumi">
             <Image
@@ -31,10 +31,10 @@ export const GumichanOishii = () => {
               alt="twitter"
               width={50}
               height={50}
-              className="mx-auto"
+              className="mx-auto mb-1"
             />
           </Link>
-          <p className="text-center">Instagram</p>
+          <p className="text-center">Twitter</p>
         </div>
         <div>
           <Link href="https://www.instagram.com/pety_gumi_official/">
