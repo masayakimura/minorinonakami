@@ -51,7 +51,7 @@ const MEMBERS: Member[] = [
     name: '白瀬 ゆの',
     imgUrl: '/yuno.jpg',
     twitterUrl: 'https://twitter.com/pety_yuno_',
-    instagramUrl: '',
+    instagramUrl: 'https://www.instagram.com/pety_yuno_official/',
     tiktokUrl: '',
   },
 ]
