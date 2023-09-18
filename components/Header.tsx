@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import { GA_ID, existsGaId } from '../src/lib/gtag'
+import { GA_ID, existsGaId } from '../src/lib/gtag'
 
 type Props = {
   title: string
@@ -22,9 +22,8 @@ export const Header = (props: Props) => {
       <meta property="og:site_name" content={title} />
       <meta property="og:type" content={type} />
       <meta property="og:image" content={imageUrl} />
-
-      {/* Google Analytics */}
-      {/* {existsGaId && (
+      Google Analytics
+      {existsGaId && (
         <>
           <script
             async
@@ -42,8 +41,7 @@ export const Header = (props: Props) => {
             }}
           />
         </>
-      )} */}
-
+      )}
       <link
         rel="apple-touch-icon"
         sizes="180x180"
