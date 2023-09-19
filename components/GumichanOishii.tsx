@@ -12,7 +12,7 @@ export const GumichanOishii = () => {
       <p className="mx-4 mt-3 text-xl">
         SNSをフォローすれば、かわいいぐみちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、ぐみちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
       </p>
-      {/* <div className="p-4">
+      <div className="p-4">
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="pety_gumi"
@@ -21,10 +21,10 @@ export const GumichanOishii = () => {
             width: '100%',
           }}
         />
-      </div> */}
-      {/* <p className="mb-4 text-center">↓インスタとTikTokはこちら↓</p> */}
+      </div>
+      <p className="mb-4 text-center">↓インスタとTikTokはこちら↓</p>
       <div className="mt-5 flex items-baseline justify-center gap-12">
-        <div>
+        {/* <div>
           <Link href="https://twitter.com/pety_gumi">
             <Image
               src="/twitter.png"
@@ -35,7 +35,7 @@ export const GumichanOishii = () => {
             />
           </Link>
           <p className="text-center">Twitter</p>
-        </div>
+        </div> */}
         <div>
           <Link href="https://www.instagram.com/pety_gumi_official/">
             <Image
