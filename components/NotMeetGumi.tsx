@@ -20,10 +20,10 @@ const gumi: GumiType = {
 export const NotMeetGumi = () => {
   return (
     <>
-      <p className="my-3 mx-2 text-center font-yusei text-xl text-blue-600">
+      <p className="my-3 mx-2 text-center font-yusei text-xl text-red-600">
         今日は会えないけど我慢してね！
         <br />
-        SNSでかわいいぐみちゃんをいっぱい補給して〜
+        SNSでかわいい美乃莉ちゃんをいっぱい補給して〜
       </p>
       <div className="mb-8 flex items-baseline justify-center gap-8">
         <div>

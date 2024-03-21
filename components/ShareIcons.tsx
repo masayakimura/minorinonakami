@@ -14,16 +14,16 @@ import { FC } from 'react'
 export const ShareIcons: FC = () => {
   return (
     <div className="my-4 flex justify-center gap-4">
-      <TwitterShareButton url="https://guminonakami.com" title="ぐみのなかみ">
+      <TwitterShareButton url="https://guminonakami.com" title="みのりのなかみ">
         <TwitterIcon size={40} round={true} />
       </TwitterShareButton>
-      <FacebookShareButton url="https://prism-cube.com" quote="ぐみのなかみ">
+      <FacebookShareButton url="https://prism-cube.com" quote="みのりのなかみ">
         <FacebookIcon size={40} round={true} />
       </FacebookShareButton>
-      <LineShareButton url="https://prism-cube.com" title="ぐみのなかみ">
+      <LineShareButton url="https://prism-cube.com" title="みのりのなかみ">
         <LineIcon size={40} round={true} />
       </LineShareButton>
-      <HatenaShareButton url="https://prism-cube.com" title="ぐみのなかみ">
+      <HatenaShareButton url="https://prism-cube.com" title="みのりのなかみ">
         <HatenaIcon size={40} round={true} />
       </HatenaShareButton>
     </div>

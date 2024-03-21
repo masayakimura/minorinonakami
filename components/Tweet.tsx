@@ -16,5 +16,5 @@ export const Tweet: React.FC<{ id: string }> = ({ id }) => {
 }
 
 const generateEmbedHtml = (id: string): string => {
-  return `<blockquote class="twitter-tweet"><a href="https://twitter.com/pety_gumi"></a></blockquote>`
+  return `<blockquote class="twitter-tweet"><a href="https://twitter.com/minori_akatsuki"></a></blockquote>`
 }

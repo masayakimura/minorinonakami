@@ -56,12 +56,14 @@ const MEMBERS: Member[] = [
   },
 ]
 
-export const Pety: FC = () => {
+export const Blancanie: FC = () => {
   return (
     <div className="mb-4 font-yusei">
       <Heading text="ぐみちゃんの居場所" />
 
-      <h3 className="mt-4 text-center text-xl text-blue-500">about Pety</h3>
+      <h3 className="mt-4 text-center text-xl text-blue-500">
+        about Blancanie
+      </h3>
       <Image
         src="/logo.jpg"
         width="360"

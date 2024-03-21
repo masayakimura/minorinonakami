@@ -8,18 +8,18 @@ export const Layout: FC<Title> = ({ children }) => {
   return (
     <>
       <Header
-        title={'ぐみのなかみ'}
+        title={'みのりのなかみ'}
         description={
-          'Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！'
+          'Blancanieのブラッドレッド担当暁月美乃莉ちゃんのいろんなことが知れちゃうサイトです'
         }
-        url={'https://guminonakami.com'}
+        url={'https://minorinonakami.vercel.app/'}
         type={'website'}
-        imageUrl={'https://www.guminonakami.com/topImage01.jpg'}
+        imageUrl={'https://minorinonakami.vercel.app/topImage01.jpg'}
       />
       <div className="mx-auto max-w-2xl">
         <header>
-          <h1 className="block bg-blue-600 py-2 text-center font-yusei text-2xl text-white">
-            ぐみのなかみ
+          <h1 className="block bg-red-600 py-2 text-center font-yusei text-2xl text-white">
+            みのりのなかみ
           </h1>
         </header>
         <main>{children}</main>

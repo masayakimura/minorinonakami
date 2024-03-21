@@ -7,15 +7,15 @@ import { Heading } from './Heading'
 export const GumichanOishii = () => {
   return (
     <div className="font-yusei">
-      <Heading text="ぐみちゃんおいしい" />
+      <Heading text="みのりといっしょ" />
 
       <p className="mx-4 mt-3 text-xl">
-        SNSをフォローすれば、かわいいぐみちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、ぐみちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
+        SNSをフォローすれば、かわいい美乃莉ちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、美乃莉ちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
       </p>
       <div className="p-4">
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="pety_gumi"
+          screenName="minori_akatsuki"
           options={{
             height: 400,
             width: '100%',

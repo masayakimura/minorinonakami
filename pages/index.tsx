@@ -4,7 +4,7 @@ import { Live } from '@/types/types'
 import { Layout } from '@/components/Layout'
 import { GumichanOishii } from '@/components/GumichanOishii'
 import CardsCarousel from '@/components/carousel'
-import { Pety } from '@/components/pety'
+import { Blancanie } from '@/components/Blancanie'
 import { Footer } from '@/components/Footer'
 import { LiveInformation } from '@/components/LiveInformation'
 import { NotMeetGumi } from '@/components/NotMeetGumi'
@@ -52,16 +52,16 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
   return (
     <Layout>
       <p className="mx-4 my-2 font-yusei text-xl">
-        Petyの青色担当小河ぐみちゃんの色んなことが知れちゃうサイトです！かわいいぐみちゃんのことたくさん知ってもっと好きになってね！
+        Blancanieのブラッドレッド担当暁月美乃莉ちゃんのいろんなことが知れちゃうサイトです！かわいい美乃莉ちゃんのことたくさん知ってもっと好きになってね！
       </p>
       <CardsCarousel />
 
-      <Heading text="今日のぐみちゃん" />
+      <Heading text="今日のみのりちゃん" />
 
       {selectDate.length === 0 ? (
         <NotMeetGumi />
       ) : (
-        <p className="my-3 text-center font-yusei text-xl text-blue-600">
+        <p className="my-3 text-center font-yusei text-xl text-red-600">
           今日はここで会えるよ！
         </p>
       )}
@@ -90,9 +90,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         </>
       ))}
 
-      <Heading text="ぐみちゃん中心の生活" />
-      <p className="my-3 text-center font-yusei text-xl text-blue-600">
-        これからぐみちゃんに会える日
+      <Heading text="みのり中心の生活" />
+      <p className="my-3 text-center font-yusei text-xl text-red-600">
+        これから美乃莉ちゃんに会える日
       </p>
       <div>
         {lives.map((live) => (
@@ -121,11 +121,11 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         ))}
       </div>
       <GumichanOishii />
-      <Pety />
+      {/* <Blancanie /> */}
       <hr className="mb-4 mt-1" />
       <ShareIcons />
       <p className="my-6 mx-4">
-        このサイトは、Pety運営に許可を得て、Petyとぐみちゃんを応援しているファンが運営している非公式サイトです。正確なライブ情報などは公式Twitterをご確認ください。
+        このサイトは、Blancanieと暁月美乃莉ちゃんを応援しているファンが運営している非公式サイトです。正確なライブ情報などは公式Xをご確認ください。
       </p>
       <Footer />
     </Layout>
