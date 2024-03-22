@@ -13,86 +13,60 @@ export type Member = {
 
 const MEMBERS: Member[] = [
   {
-    name: '汐音 ほのか',
-    imgUrl: '/honoka.jpg',
-    twitterUrl: 'https://twitter.com/pety_honoka',
-    instagramUrl: 'https://www.instagram.com/pety_honoka_official_/',
-    tiktokUrl: '',
+    name: '暁月 美乃莉',
+    imgUrl: '/minori.jpg',
+    twitterUrl: 'https://twitter.com/minori_akatsuki',
+    instagramUrl: 'https://www.instagram.com/minori_akatsuki/',
+    tiktokUrl: 'https://www.tiktok.com/@c1x1uuu9/',
   },
   {
-    name: '羽乃 つゆ',
-    imgUrl: '/tsuyu.jpg',
-    twitterUrl: 'https://twitter.com/pety_tsuyu',
-    instagramUrl: 'https://www.instagram.com/pety_tsuyu_official/',
-    tiktokUrl: 'https://www.tiktok.com/@ebiumainaa',
+    name: '朝比奈 優奈',
+    imgUrl: '/yuuna.jpg',
+    twitterUrl: 'https://twitter.com/yuuna_asahina',
+    instagramUrl: 'https://www.instagram.com/yunachi_dayo',
+    tiktokUrl: 'https://www.tiktok.com/@yunachi_0815',
   },
   {
-    name: '観月 りり',
-    imgUrl: '/riri.jpg',
-    twitterUrl: 'https://twitter.com/pety_riri',
-    instagramUrl: 'https://www.instagram.com/pety_riri_official/',
-    tiktokUrl: 'https://www.tiktok.com/@pety_riri/',
-  },
-  {
-    name: '琥珀 かりん',
-    imgUrl: '/karin.jpg',
-    twitterUrl: 'https://twitter.com/pety_karin',
-    instagramUrl: 'https://www.instagram.com/pety_karin_official/',
-    tiktokUrl: 'https://www.tiktok.com/@karichanniconico/',
-  },
-  {
-    name: '小河 ぐみ',
-    imgUrl: '/gumi.jpg',
-    twitterUrl: 'https://twitter.com/pety_gumi',
-    instagramUrl: 'https://www.instagram.com/pety_gumi_official/',
-    tiktokUrl: 'https://www.tiktok.com/@pety_gumi/',
-  },
-  {
-    name: '白瀬 ゆの',
-    imgUrl: '/yuno.jpg',
-    twitterUrl: 'https://twitter.com/pety_yuno_',
-    instagramUrl: 'https://www.instagram.com/pety_yuno_official/',
-    tiktokUrl: '',
+    name: '天城 りおな',
+    imgUrl: '/riona.jpg',
+    twitterUrl: 'https://twitter.com/riona_amaki',
+    instagramUrl: 'https://www.instagram.com/_amaki_riona/',
+    tiktokUrl: 'https://www.tiktok.com/@_amaki_riona',
   },
 ]
 
 export const Blancanie: FC = () => {
   return (
     <div className="mb-4 font-yusei">
-      <Heading text="ぐみちゃんの居場所" />
+      <Heading text="みのりの居場所" />
 
-      <h3 className="mt-4 text-center text-xl text-blue-500">
-        about Blancanie
-      </h3>
+      <h3 className="mt-4 text-center text-xl text-red-500">about Blancanie</h3>
       <Image
         src="/logo.jpg"
         width="360"
         height="360"
-        alt="Pety"
+        alt="Blancanie"
         className="mx-auto my-2"
       />
-      <p className="mx-4 my-2 text-xl">
-        2021年9月デビュー。「生きるのムズい」世界を変える！ささいな毎日にささいなハッピーとラブを！をコンセプトに活動中！
+      <p className="mx-4 my-6 text-xl">
+        グリム童話の白雪姫のストーリーをベースに"儚くも美しい少女の冒険"をコンセプトに結成された"Blancanie"
       </p>
 
       <div className="flex items-baseline justify-center gap-8">
         <div>
-          <Link href="https://twitter.com/pety_official/" target="_blank">
+          <Link href="https://twitter.com/blancanie2023/" target="_blank">
             <Image
-              src="/twitter.png"
-              alt="twitter"
-              width={50}
-              height={50}
+              src="/x.png"
+              alt="X"
+              width={42}
+              height={42}
               className="mx-auto mb-1"
             />
           </Link>
-          <p className="text-center">Twitter</p>
+          {/* <p className="text-center">X</p> */}
         </div>
         <div>
-          <Link
-            href="https://www.youtube.com/channel/UCDmDWae5JoEXogKtOM1sDYw"
-            target="_blank"
-          >
+          <Link href="https://www.youtube.com/@blancanie2023" target="_blank">
             <Image
               src="/youtube.png"
               alt="youtube"
@@ -101,9 +75,9 @@ export const Blancanie: FC = () => {
               className="mx-auto mb-1"
             />
           </Link>
-          <p className="text-center">Youtube</p>
+          {/* <p className="text-center">Youtube</p> */}
         </div>
-        <div>
+        {/* <div>
           <Link href="https://www.tiktok.com/@pety_official" target="_blank">
             <Image
               src="/tiktok.svg"
@@ -114,12 +88,12 @@ export const Blancanie: FC = () => {
             />
           </Link>
           <p className="text-center">TikTok</p>
-        </div>
+        </div> */}
       </div>
 
       <hr className="my-6" />
 
-      <h3 className="mt-4 text-center text-xl text-blue-500">Member</h3>
+      <h3 className="mt-4 text-center text-xl text-red-500">Member</h3>
 
       <ul>
         {MEMBERS.map((member) => (
@@ -131,19 +105,19 @@ export const Blancanie: FC = () => {
               alt={member.name}
               className="mx-auto"
             />
-            <p className="my-2 text-center text-xl">{member.name}</p>
-            <div className="mb-8 flex items-baseline justify-center gap-8">
+            <p className="my-4 text-center text-xl">{member.name}</p>
+            <div className="mb-12 flex items-baseline justify-center gap-8">
               <div>
                 <Link href={member.twitterUrl} target="_blank">
                   <Image
-                    src="/twitter.png"
-                    alt="twitter"
-                    width={50}
-                    height={50}
+                    src="/x.png"
+                    alt="X"
+                    width={42}
+                    height={42}
                     className="mx-auto mb-1"
                   />
                 </Link>
-                <p className="text-center">Twitter</p>
+                {/* <p className="text-center">X</p> */}
               </div>
               {member.instagramUrl ? (
                 <div>
@@ -156,7 +130,7 @@ export const Blancanie: FC = () => {
                       className="mx-auto"
                     />
                   </Link>
-                  <p className="text-center">Instagram</p>
+                  {/* <p className="text-center">Instagram</p> */}
                 </div>
               ) : (
                 <></>
@@ -173,7 +147,7 @@ export const Blancanie: FC = () => {
                       className="mx-auto"
                     />
                   </Link>
-                  <p className="text-center">TikTok</p>
+                  {/* <p className="text-center">TikTok</p> */}
                 </div>
               ) : (
                 <></>
@@ -183,7 +157,7 @@ export const Blancanie: FC = () => {
         ))}
       </ul>
 
-      <hr className="my-6" />
+      {/* <hr className="my-6" />
 
       <h3 className="mt-4 text-center text-xl text-blue-500">Music</h3>
 
@@ -212,7 +186,7 @@ export const Blancanie: FC = () => {
           />
           <p className="text-xl">SOUND CLOUD</p>
         </div>
-      </Link>
+      </Link> */}
     </div>
   )
 }

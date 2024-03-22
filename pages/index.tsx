@@ -121,7 +121,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         ))}
       </div>
       <GumichanOishii />
-      {/* <Blancanie /> */}
+      <Blancanie />
       <hr className="mb-4 mt-1" />
       <ShareIcons />
       <p className="my-6 mx-4">
