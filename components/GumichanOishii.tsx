@@ -37,7 +37,7 @@ export const GumichanOishii = () => {
           <p className="text-center">Twitter</p>
         </div> */}
         <div>
-          <Link href="https://www.instagram.com/pety_gumi_official/">
+          <Link href="https://www.instagram.com/minori_akatsuki">
             <Image
               src="/instagram.png"
               alt="instagram"
@@ -46,10 +46,22 @@ export const GumichanOishii = () => {
               className="mx-auto"
             />
           </Link>
-          <p className="text-center">Instagram</p>
+          <p className="text-center">@minori_akatsuki</p>
         </div>
         <div>
-          <Link href="https://www.tiktok.com/@pety_gumi/">
+          <Link href="https://www.instagram.com/_myfaith.__/">
+            <Image
+              src="/instagram.png"
+              alt="instagram"
+              width={50}
+              height={50}
+              className="mx-auto"
+            />
+          </Link>
+          <p className="text-center">_myfaith.__</p>
+        </div>
+        <div>
+          <Link href="https://www.tiktok.com/@c1x1uuu9/">
             <Image
               src="/tiktok.svg"
               alt="tiktok"
@@ -58,7 +70,7 @@ export const GumichanOishii = () => {
               className="mx-auto"
             />
           </Link>
-          <p className="text-center">tiktok</p>
+          <p className="text-center">暁月</p>
         </div>
       </div>
     </div>
