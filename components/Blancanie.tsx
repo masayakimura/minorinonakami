@@ -49,7 +49,7 @@ export const Blancanie: FC = () => {
         className="mx-auto my-2"
       />
       <p className="mx-4 my-6 text-xl">
-        グリム童話の白雪姫のストーリーをベースに"儚くも美しい少女の冒険"をコンセプトに結成された"Blancanie"
+        グリム童話の白雪姫のストーリーをベースに「儚くも美しい少女の冒険」をコンセプトに結成された「Blancanie」
       </p>
 
       <div className="flex items-baseline justify-center gap-8">
