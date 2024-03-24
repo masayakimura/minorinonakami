@@ -12,9 +12,9 @@ export const Layout: FC<Title> = ({ children }) => {
         description={
           'Blancanieのブラッドレッド担当暁月美乃莉ちゃんのいろんなことが知れちゃうサイトです'
         }
-        url={'https://minorinonakami.vercel.app/'}
+        url={'https://minorinonakami.net/'}
         type={'website'}
-        imageUrl={'https://minorinonakami.vercel.app/topImage01.jpg'}
+        imageUrl={'https://minorinonakami.net/topImage01.jpg'}
       />
       <div className="mx-auto max-w-2xl">
         <header>
