@@ -2,12 +2,12 @@ import { GetServerSideProps, NextPage } from 'next'
 import { supabase } from '@/utils/supabase'
 import { Live } from '@/types/types'
 import { Layout } from '@/components/Layout'
-import { GumichanOishii } from '@/components/GumichanOishii'
+import { Minoritoissyo } from '@/components/Minoritoissyo'
 import CardsCarousel from '@/components/carousel'
 import { Blancanie } from '@/components/Blancanie'
 import { Footer } from '@/components/Footer'
 import { LiveInformation } from '@/components/LiveInformation'
-import { NotMeetGumi } from '@/components/NotMeetGumi'
+import { NotMeetMinori } from '@/components/NotMeetMinori'
 import { Heading } from '@/components/Heading'
 import { ShareIcons } from '@/components/ShareIcons'
 
@@ -59,9 +59,9 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       <Heading text="今日のみのりちゃん" />
 
       {selectDate.length === 0 ? (
-        <NotMeetGumi />
+        <NotMeetMinori />
       ) : (
-        <p className="my-3 text-center font-yusei text-xl text-red-600">
+        <p className="my-3 text-center font-yusei text-xl text-rose-800">
           今日はここで会えるよ！
         </p>
       )}
@@ -91,7 +91,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
       ))}
 
       <Heading text="みのり中心の生活" />
-      <p className="my-3 text-center font-yusei text-xl text-red-600">
+      <p className="my-3 text-center font-yusei text-xl text-rose-800">
         これから美乃莉ちゃんに会える日
       </p>
       <div>
@@ -120,10 +120,10 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
           </>
         ))}
       </div>
-      <GumichanOishii />
+      <Minoritoissyo />
       <Blancanie />
-      <hr className="mb-4 mt-1" />
-      <ShareIcons />
+      {/* <hr className="mb-4 mt-1" /> */}
+      {/* <ShareIcons /> */}
       <p className="my-6 mx-4">
         このサイトは、Blancanieと暁月美乃莉ちゃんを応援しているファンが運営している非公式サイトです。正確なライブ情報などは公式Xをご確認ください。
       </p>

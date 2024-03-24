@@ -4,12 +4,12 @@ import React from 'react'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import { Heading } from './Heading'
 
-export const GumichanOishii = () => {
+export const Minoritoissyo = () => {
   return (
     <div className="font-yusei">
       <Heading text="みのりといっしょ" />
 
-      <p className="mx-4 mt-3 text-xl">
+      <p className="mx-4 mt-3 mb-3 text-xl">
         SNSをフォローすれば、かわいい美乃莉ちゃんがもっと見れるよ！ぜひフォローしていいねやリプをして、美乃莉ちゃん中心の生活を送ってみてください！幸せになること間違いなしです！
       </p>
       <div className="p-4">
@@ -22,8 +22,8 @@ export const GumichanOishii = () => {
           }}
         />
       </div>
-      <p className="mb-4 text-center">↓インスタとTikTokはこちら↓</p>
-      <div className="mt-5 flex items-baseline justify-center gap-12">
+      <p className="mt-5 mb-4 text-center">↓インスタとTikTokはこちら↓</p>
+      <div className="mb-10 mt-5 flex items-baseline justify-center gap-12">
         {/* <div>
           <Link href="https://twitter.com/pety_gumi">
             <Image
@@ -46,7 +46,7 @@ export const GumichanOishii = () => {
               className="mx-auto"
             />
           </Link>
-          <p className="text-center">@minori_akatsuki</p>
+          {/* <p className="text-center">minori_akatsuki</p> */}
         </div>
         <div>
           <Link href="https://www.instagram.com/_myfaith.__/">
@@ -58,7 +58,7 @@ export const GumichanOishii = () => {
               className="mx-auto"
             />
           </Link>
-          <p className="text-center">_myfaith.__</p>
+          {/* <p className="text-center">_myfaith.__</p> */}
         </div>
         <div>
           <Link href="https://www.tiktok.com/@c1x1uuu9/">
@@ -70,7 +70,7 @@ export const GumichanOishii = () => {
               className="mx-auto"
             />
           </Link>
-          <p className="text-center">暁月</p>
+          {/* <p className="text-center">革命の色担当</p> */}
         </div>
       </div>
     </div>

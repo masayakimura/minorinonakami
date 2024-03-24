@@ -6,7 +6,7 @@ import { Heading } from './Heading'
 export type Member = {
   name: string
   imgUrl: string
-  twitterUrl: string
+  xUrl: string
   instagramUrl?: string
   tiktokUrl?: string
 }
@@ -15,21 +15,21 @@ const MEMBERS: Member[] = [
   {
     name: '暁月 美乃莉',
     imgUrl: '/minori.jpg',
-    twitterUrl: 'https://twitter.com/minori_akatsuki',
+    xUrl: 'https://twitter.com/minori_akatsuki',
     instagramUrl: 'https://www.instagram.com/minori_akatsuki/',
     tiktokUrl: 'https://www.tiktok.com/@c1x1uuu9/',
   },
   {
     name: '朝比奈 優奈',
     imgUrl: '/yuuna.jpg',
-    twitterUrl: 'https://twitter.com/yuuna_asahina',
+    xUrl: 'https://twitter.com/yuuna_asahina',
     instagramUrl: 'https://www.instagram.com/yunachi_dayo',
     tiktokUrl: 'https://www.tiktok.com/@yunachi_0815',
   },
   {
     name: '天城 りおな',
     imgUrl: '/riona.jpg',
-    twitterUrl: 'https://twitter.com/riona_amaki',
+    xUrl: 'https://twitter.com/riona_amaki',
     instagramUrl: 'https://www.instagram.com/_amaki_riona/',
     tiktokUrl: 'https://www.tiktok.com/@_amaki_riona',
   },
@@ -40,7 +40,9 @@ export const Blancanie: FC = () => {
     <div className="mb-4 font-yusei">
       <Heading text="みのりの居場所" />
 
-      <h3 className="mt-4 text-center text-xl text-red-500">about Blancanie</h3>
+      <h3 className="mt-4 text-center text-xl text-rose-800">
+        about Blancanie
+      </h3>
       <Image
         src="/logo.jpg"
         width="360"
@@ -93,7 +95,7 @@ export const Blancanie: FC = () => {
 
       <hr className="my-6" />
 
-      <h3 className="mt-4 text-center text-xl text-red-500">Member</h3>
+      <h3 className="mt-4 text-center text-xl text-rose-800">Member</h3>
 
       <ul>
         {MEMBERS.map((member) => (
@@ -108,7 +110,7 @@ export const Blancanie: FC = () => {
             <p className="my-4 text-center text-xl">{member.name}</p>
             <div className="mb-12 flex items-baseline justify-center gap-8">
               <div>
-                <Link href={member.twitterUrl} target="_blank">
+                <Link href={member.xUrl} target="_blank">
                   <Image
                     src="/x.png"
                     alt="X"

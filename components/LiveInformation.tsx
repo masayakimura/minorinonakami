@@ -29,7 +29,7 @@ export const LiveInformation: FC<Omit<Live, 'created_at'>> = ({
         {today === date ? (
           ''
         ) : (
-          <div className="mx-auto mb-2 w-36 rounded-full bg-red-500 py-1 text-center text-lg text-white">
+          <div className="mx-auto mb-2 w-36 rounded-full bg-rose-800 py-1 text-center text-lg text-white">
             <ConvertDate convertDate={date}></ConvertDate>
           </div>
         )}
