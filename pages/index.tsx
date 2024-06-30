@@ -9,6 +9,8 @@ import { Footer } from '@/components/Footer'
 import { LiveInformation } from '@/components/LiveInformation'
 import { NotMeetMinori } from '@/components/NotMeetMinori'
 import { Heading } from '@/components/Heading'
+import TweetEmbedList from '@/components/TweetembedList'
+
 import { ShareIcons } from '@/components/ShareIcons'
 
 export const getServerSideProps: GetServerSideProps = async () => {
@@ -49,6 +51,20 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
     return n === true
   })
 
+  const tweetIds = [
+    '1803404263726653706',
+    '1801236413620584921',
+    '1770794623448776832',
+    '1769330041270452697',
+    '1768598210824876502',
+    '1767163403762860335',
+    '1755215785356923284',
+    '1745798712847139034',
+    '1735293217615331385',
+    '1730569408635154710',
+    '1727291638832386069',
+    '1726583584763650287',
+  ]
   return (
     <Layout>
       <p className="mx-4 my-2 font-yusei text-xl">
@@ -121,6 +137,7 @@ const Home: NextPage<LivesProps> = ({ lives }) => {
         ))}
       </div>
       <Minoritoissyo />
+      <TweetEmbedList tweetIds={tweetIds} />
       <Blancanie />
       {/* <hr className="mb-4 mt-1" /> */}
       {/* <ShareIcons /> */}
